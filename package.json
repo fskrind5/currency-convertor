@@ -1,7 +1,7 @@
 {
   "name": "fsk-currency-convertor",
-  "version": "1.0.0",
-  "description": "This is a simple currency convertor built using typescript. There are five currencies user can choose from to convert. USD, EUR, GBP, INR and PKR",
+  "version": "1.2.0",
+  "description": "This is the updated version of currency convertor. New Currency pairs are added in this version",
   "main": "index.js",
   "type": "module",
   "bin": "index.js",

@@ -6,24 +6,29 @@ import chalk from "chalk";
 console.log(chalk.blue.bold("\n \t Welcome to the Currency Convertor by Falak Sher Khan \n"));
 
 const currency: any = {
-    USD : 1,
-    EUR : 0.91,
-    GBP : 0.76,
-    INR : 74.57,
-    PKR : 280
+    USD : 1,     //* American Dollar - Base Currency 
+    EUR : 0.93,  //* Euro
+    GBP : 0.80,  //* British Pound
+    CAD : 1.37,  //* Canadian Dollar
+    AED : 3.67,  //* Emirati Dirham
+    TRY : 32.32, //* Turkish Lira
+    SAR : 3.75,  //* Saudi Arabian Riyal
+    INR : 74.57, //* Indian Rupee
+    PKR : 278.05, //* Pakistani Rupee
+    JPY : 153.34  //* Japenese Yen
 }
 
 let userAnswer = await inquirer.prompt([
     {
         name : "from",
         type :"list",
-        choices : ["USD", "EUR", "GBP", "INR", "PKR"],
+        choices : ["USD", "EUR", "GBP", "CAD", "AED", "TRY", "SAR", "JPY", "INR", "PKR"],
         message : "Enter the currency you want to convert from:"
     },
     {
         name : "to",
         type :"list",
-        choices : ["USD", "EUR", "GBP", "INR", "PKR"],
+        choices : ["USD", "EUR", "GBP", "CAD", "AED", "TRY", "SAR", "JPY", "INR", "PKR"],
         message : "Enter the currency you want to convert to:"
     },
     {
